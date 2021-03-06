@@ -11,12 +11,12 @@ Generate human faces made from stone using Pix2Pix GAN.
 
 ## Introduction
 
-This task is a subset of general image-to-image translation tasks like converting black and white image to coloured image. Absence of target image( i.e. stone faces) examples makes this problem trickier. In our experiments we train Pix2Pix GAN with stone images and their contours. We use diverse stone images to generate variety of contours with the aim that GAN generalizes well and is able to fill contours of faces with stone texures.
+This task is a subset of general image-to-image translation tasks like converting black and white image to coloured image. The absence of target image( i.e. stone faces) examples makes this problem trickier. In our experiments, we train Pix2Pix GAN with stone images and their contours. We use diverse stone images to generate a variety of contours with the aim that GAN generalizes well and can fill contours of faces with stone textures.
 
 ## Requirements
 
 - Pix2Pix GAN ([this Github repo](https://github.com/affinelayer/pix2pix-tensorflow) or other implementations)
-- Structured Edge Detection Toolbox ([repo](https://github.com/pdollar/edges)) to extract contours. Installation and usage instructions are mentioned on webpage. Depending upon Matlab version, there are chances of getting compilation error while compiling ".cpp" files. This is generaly due to introduction of new C type "mwSize" for mxArray ([reference](https://uk.mathworks.com/help/matlab/apiref/mwsize.html)). Updated files are available in assets folder.
+- Structured Edge Detection Toolbox ([repo](https://github.com/pdollar/edges)) to extract contours. Installation and usage instructions are mentioned on the webpage. Depending upon the Matlab version, there are chances of getting a compilation error while compiling ".cpp" files. This is generally due to introduction of new C type "mwSize" for mxArray ([reference](https://uk.mathworks.com/help/matlab/apiref/mwsize.html)). Updated files are available in the assets folder.
 - Matlab\Octave
 - Pillow 
 
@@ -33,5 +33,5 @@ The files and scripts for reproducing the experiments are organized as follows:
 |   +-- 1/ : initial experiments.
 |   +-- 2/ : experiments with black background.
 |   +-- 3/ : experiments with large stone background.
-+-- create_dataset.ipynb : iPython notebook to create dataset for experiment 2 and 3.
++-- create_dataset.ipynb : iPython notebook to create the dataset for experiments 2 and 3.
 ```
